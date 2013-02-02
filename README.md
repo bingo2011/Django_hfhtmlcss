@@ -1,2 +1,2 @@
-Django_HF-HLCS
+Django App Template
 ==============
