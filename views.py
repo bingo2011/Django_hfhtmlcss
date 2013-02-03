@@ -7,8 +7,8 @@ from django.http import Http404
 def index(request):
     return render_to_response('starbuzz/index.html')
 
-def staticpage(request, page_name):
+def staticpage(request, template):
     try:
-        return direct_to_template(request, 'lounge/%s' % page_name)
+        return direct_to_template(request, template)
     except TemplateDoesNotExist:
         raise Http404
